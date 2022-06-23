@@ -1,9 +1,15 @@
 import webbrowser
+import re
 
 url = input("Masukkan url scribdnya : ")
 
-#awal code ada di indeks 32 sampai ke indeks 41
-angka_link = url[32:41]
+#awal kode ada di indeks 32 sampai ke indeks 
+
+arr = url.split('/')
+
+# print(f"{arr[4]}")
+
+angka_link = arr[4]
 
 link1 = "https://www.scribd.com/embeds/"
 link2 = "/content?start_page=1&view_mode=scroll&access_key=key-fFexxf7r1bzEfWu3HKwf"
